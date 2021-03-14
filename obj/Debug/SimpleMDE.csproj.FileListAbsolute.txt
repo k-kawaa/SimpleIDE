@@ -1,0 +1,10 @@
+D:\C#\SimpleMDE\bin\Debug\SimpleMDE.exe.config
+D:\C#\SimpleMDE\bin\Debug\SimpleMDE.exe
+D:\C#\SimpleMDE\bin\Debug\SimpleMDE.pdb
+D:\C#\SimpleMDE\obj\Debug\SimpleMDE.csprojAssemblyReference.cache
+D:\C#\SimpleMDE\obj\Debug\SimpleMDE.MainForm.resources
+D:\C#\SimpleMDE\obj\Debug\SimpleMDE.Properties.Resources.resources
+D:\C#\SimpleMDE\obj\Debug\SimpleMDE.csproj.GenerateResource.cache
+D:\C#\SimpleMDE\obj\Debug\SimpleMDE.csproj.CoreCompileInputs.cache
+D:\C#\SimpleMDE\obj\Debug\SimpleMDE.exe
+D:\C#\SimpleMDE\obj\Debug\SimpleMDE.pdb
