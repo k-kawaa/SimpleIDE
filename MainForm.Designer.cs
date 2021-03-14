@@ -320,6 +320,7 @@ namespace SimpleMDE
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "SimpleMDE";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
