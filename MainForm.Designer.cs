@@ -60,7 +60,7 @@ namespace SimpleMDE
             this.検索SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.バージョン情報AToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.Rich_TextBox = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -301,23 +301,23 @@ namespace SimpleMDE
             this.バージョン情報AToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.バージョン情報AToolStripMenuItem.Text = "バージョン情報(&A)...";
             // 
-            // richTextBox1
+            // Rich_TextBox
             // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Rich_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox1.Location = new System.Drawing.Point(13, 28);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(775, 410);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.Rich_TextBox.Location = new System.Drawing.Point(13, 28);
+            this.Rich_TextBox.Name = "Rich_TextBox";
+            this.Rich_TextBox.Size = new System.Drawing.Size(775, 410);
+            this.Rich_TextBox.TabIndex = 1;
+            this.Rich_TextBox.Text = "";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.Rich_TextBox);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
@@ -362,7 +362,7 @@ namespace SimpleMDE
         private System.Windows.Forms.ToolStripMenuItem 検索SToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem バージョン情報AToolStripMenuItem;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        public System.Windows.Forms.RichTextBox Rich_TextBox;
     }
 }
 

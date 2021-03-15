@@ -32,7 +32,13 @@ namespace SimpleMDE
             this.Setting_tab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.Font_dialog = new System.Windows.Forms.FontDialog();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Setting_tab.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Setting_tab
@@ -59,6 +65,7 @@ namespace SimpleMDE
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -66,6 +73,42 @@ namespace SimpleMDE
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "エディタ設定";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // Font_dialog
+            // 
+            this.Font_dialog.Apply += new System.EventHandler(this.Font_dialog_Apply);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("MS UI Gothic", 16F);
+            this.button1.Location = new System.Drawing.Point(6, 85);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(298, 92);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "フォント設定";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 12F);
+            this.label1.Location = new System.Drawing.Point(6, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(279, 32);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "フォントを設定します。\r\nアプリケーションのフォント変更はできません。\r\n";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Location = new System.Drawing.Point(6, 6);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(310, 183);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "フォント設定";
             // 
             // CustomizeForm
             // 
@@ -78,6 +121,9 @@ namespace SimpleMDE
             this.Name = "CustomizeForm";
             this.Text = "設定画面";
             this.Setting_tab.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -87,5 +133,9 @@ namespace SimpleMDE
         private System.Windows.Forms.TabControl Setting_tab;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.FontDialog Font_dialog;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
