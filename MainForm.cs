@@ -32,11 +32,13 @@ namespace SimpleMDE
             CustomizeForm Form = new CustomizeForm();
             Form.Show();
         }
-
-        public bool ChangeFont(Font Font)
+        /// <summary>
+        /// editorフォント変更メソッド
+        /// </summary>
+        /// <param name="Font"></param>
+        public void ChangeFont(Font Font)
         {
             Rich_TextBox.Font = Font;
-            return true;
         }
     }
 }
