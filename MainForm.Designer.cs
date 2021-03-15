@@ -184,20 +184,20 @@ namespace SimpleMDE
             // 
             this.元に戻すUToolStripMenuItem.Name = "元に戻すUToolStripMenuItem";
             this.元に戻すUToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.元に戻すUToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.元に戻すUToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.元に戻すUToolStripMenuItem.Text = "元に戻す(&U)";
             // 
             // やり直しRToolStripMenuItem
             // 
             this.やり直しRToolStripMenuItem.Name = "やり直しRToolStripMenuItem";
             this.やり直しRToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.やり直しRToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.やり直しRToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.やり直しRToolStripMenuItem.Text = "やり直し(&R)";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(170, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
             // 
             // 切り取りTToolStripMenuItem
             // 
@@ -205,7 +205,7 @@ namespace SimpleMDE
             this.切り取りTToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.切り取りTToolStripMenuItem.Name = "切り取りTToolStripMenuItem";
             this.切り取りTToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.切り取りTToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.切り取りTToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.切り取りTToolStripMenuItem.Text = "切り取り(&T)";
             // 
             // コピーCToolStripMenuItem
@@ -214,7 +214,7 @@ namespace SimpleMDE
             this.コピーCToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.コピーCToolStripMenuItem.Name = "コピーCToolStripMenuItem";
             this.コピーCToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.コピーCToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.コピーCToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.コピーCToolStripMenuItem.Text = "コピー(&C)";
             // 
             // 貼り付けPToolStripMenuItem
@@ -223,18 +223,18 @@ namespace SimpleMDE
             this.貼り付けPToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.貼り付けPToolStripMenuItem.Name = "貼り付けPToolStripMenuItem";
             this.貼り付けPToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.貼り付けPToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.貼り付けPToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.貼り付けPToolStripMenuItem.Text = "貼り付け(&P)";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(170, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
             // 
             // すべて選択AToolStripMenuItem
             // 
             this.すべて選択AToolStripMenuItem.Name = "すべて選択AToolStripMenuItem";
-            this.すべて選択AToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.すべて選択AToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.すべて選択AToolStripMenuItem.Text = "すべて選択(&A)";
             // 
             // ツールTToolStripMenuItem
@@ -251,12 +251,14 @@ namespace SimpleMDE
             this.カスタマイズCToolStripMenuItem.Name = "カスタマイズCToolStripMenuItem";
             this.カスタマイズCToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.カスタマイズCToolStripMenuItem.Text = "カスタマイズ(&C)";
+            this.カスタマイズCToolStripMenuItem.Click += new System.EventHandler(this.カスタマイズCToolStripMenuItem_Click);
             // 
             // オプションOToolStripMenuItem
             // 
             this.オプションOToolStripMenuItem.Name = "オプションOToolStripMenuItem";
             this.オプションOToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.オプションOToolStripMenuItem.Text = "オプション(&O)";
+            this.オプションOToolStripMenuItem.Text = "設定(&T)";
+            this.オプションOToolStripMenuItem.Click += new System.EventHandler(this.オプションOToolStripMenuItem_Click);
             // 
             // ヘルプHToolStripMenuItem
             // 

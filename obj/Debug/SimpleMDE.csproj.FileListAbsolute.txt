@@ -8,3 +8,4 @@ D:\C#\SimpleMDE\obj\Debug\SimpleMDE.csproj.GenerateResource.cache
 D:\C#\SimpleMDE\obj\Debug\SimpleMDE.csproj.CoreCompileInputs.cache
 D:\C#\SimpleMDE\obj\Debug\SimpleMDE.exe
 D:\C#\SimpleMDE\obj\Debug\SimpleMDE.pdb
+D:\C#\SimpleMDE\obj\Debug\SimpleMDE.CustomizeForm.resources

@@ -21,5 +21,16 @@ namespace SimpleMDE
         {
             
         }
+
+        private void カスタマイズCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void オプションOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CustomizeForm Form = new CustomizeForm();
+            Form.Show();
+        }
     }
 }
