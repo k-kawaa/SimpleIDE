@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMDE", "SimpleMDE.csproj", "{C323320F-D05A-48E1-A445-FB2CD98D179D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleIDE", "SimpleIDE.csproj", "{C323320F-D05A-48E1-A445-FB2CD98D179D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
