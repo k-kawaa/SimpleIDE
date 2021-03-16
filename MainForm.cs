@@ -29,7 +29,7 @@ namespace SimpleMDE
 
         private void オプションOToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CustomizeForm Form = new CustomizeForm();
+            CustomizeForm Form = new CustomizeForm(this);
             Form.Show();
         }
         /// <summary>
