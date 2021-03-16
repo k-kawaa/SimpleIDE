@@ -32,6 +32,7 @@ namespace SimpleMDE
             CustomizeForm Form = new CustomizeForm(this);
             Form.Show();
         }
+
         /// <summary>
         /// editorフォント変更メソッド
         /// </summary>
@@ -39,6 +40,26 @@ namespace SimpleMDE
         public void ChangeFont(Font Font)
         {
             Rich_TextBox.Font = Font;
+        }
+
+        /// <summary>
+        /// 色を変更するメソッド
+        /// </summary>
+        /// <param name="type"></param>
+        public void ChangeEditorColor(int type)
+        {
+            switch (type)
+            {
+                case 1:
+                    Rich_TextBox.BackColor = Color.Black;
+                    break;
+                case 2:
+                    Rich_TextBox.BackColor = Color.White;
+                    break;
+                default:
+                    MessageBox.Show("色が不正です。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
+            }
         }
     }
 }

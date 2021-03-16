@@ -38,5 +38,27 @@ namespace SimpleMDE
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if(comboBox1.SelectedItem == null)
+            {
+                return;
+            }
+            string SelectColor = comboBox1.SelectedItem.ToString();
+            switch (SelectColor)
+            {
+                case "Black Theme":
+                    this.Form.ChangeEditorColor(1);
+                    break;
+
+                case "White Theme":
+                    this.Form.ChangeEditorColor(2);
+                    break;
+                default:
+                    MessageBox.Show("色が不正です。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
+            }
+        }
     }
 }
