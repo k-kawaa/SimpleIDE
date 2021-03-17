@@ -61,6 +61,7 @@ namespace SimpleMDE
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.バージョン情報AToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Rich_TextBox = new System.Windows.Forms.RichTextBox();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,6 +112,7 @@ namespace SimpleMDE
             this.開くOToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.開くOToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.開くOToolStripMenuItem.Text = "開く(&O)";
+            this.開くOToolStripMenuItem.Click += new System.EventHandler(this.開くOToolStripMenuItem_Click);
             // 
             // toolStripSeparator
             // 
@@ -312,6 +314,10 @@ namespace SimpleMDE
             this.Rich_TextBox.TabIndex = 1;
             this.Rich_TextBox.Text = "";
             // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog1";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -363,6 +369,7 @@ namespace SimpleMDE
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem バージョン情報AToolStripMenuItem;
         public System.Windows.Forms.RichTextBox Rich_TextBox;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
     }
 }
 

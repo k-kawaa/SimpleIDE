@@ -34,6 +34,16 @@ namespace SimpleMDE
         }
 
         /// <summary>
+        /// ファイルを開きます。
+        /// </summary>
+        private void open()
+        {
+            var result = openFileDialog.ShowDialog();
+            String path = openFileDialog.FileName;
+            Rich_TextBox.LoadFile(path, RichTextBoxStreamType.PlainText);
+        }
+
+        /// <summary>
         /// editorフォント変更メソッド
         /// </summary>
         /// <param name="Font"></param>
@@ -60,6 +70,11 @@ namespace SimpleMDE
                     MessageBox.Show("色が不正です。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
             }
+        }
+
+        private void 開くOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            open();
         }
     }
 }
