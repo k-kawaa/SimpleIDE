@@ -44,7 +44,7 @@ namespace SimpleMDE
         }
 
         /// <summary>
-        /// editorフォント変更メソッド
+        /// エディタのフォントを変更します。
         /// </summary>
         /// <param name="Font"></param>
         public void ChangeFont(Font Font)
@@ -53,7 +53,7 @@ namespace SimpleMDE
         }
 
         /// <summary>
-        /// 色を変更するメソッド
+        /// エディタの背景色を変更します。
         /// </summary>
         /// <param name="type"></param>
         public void ChangeEditorColor(int type)
