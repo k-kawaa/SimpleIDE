@@ -316,6 +316,7 @@ namespace SimpleMDE
             this.Rich_TextBox.TabIndex = 1;
             this.Rich_TextBox.Text = "";
             this.Rich_TextBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.Link_Clicked);
+            this.Rich_TextBox.TextChanged += new System.EventHandler(this.TextChanged);
             // 
             // openFileDialog
             // 

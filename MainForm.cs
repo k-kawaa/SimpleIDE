@@ -53,6 +53,11 @@ namespace SimpleMDE
             Form.Show();
         }
 
+        private new void TextChanged(object sender, EventArgs e)
+        {
+            this.Text = "SimpleIDE" + "（未保存）" + this.path;
+        }
+
         /// <summary>
         /// ファイルを開きます。
         /// </summary>
@@ -107,9 +112,14 @@ namespace SimpleMDE
         public void SaveFile()
         {
             String Filedata = Rich_TextBox.Text;
+            if (this.path == null)
+            {
+                ///TODO:新規作成処理
+            }
             using (StreamWriter writer = new StreamWriter(this.path))
             {
                 writer.Write(Filedata);
+                this.Text = "SimpleIDE" + "   " + this.path;
             }
         }
 
