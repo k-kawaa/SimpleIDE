@@ -38,7 +38,6 @@ namespace SimpleMDE
         /// </summary>
         private void open()
         {
-
             if(openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 var filepath = openFileDialog.FileName;
@@ -48,6 +47,7 @@ namespace SimpleMDE
                     string fileContent = reader.ReadToEnd();
                     Rich_TextBox.Text = fileContent;
                 }
+                this.Text = "SimpleIDE" + "   " + filepath;
             }
         }
 
