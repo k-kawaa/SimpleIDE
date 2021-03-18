@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace SimpleMDE
 {
     public partial class MainForm : Form
@@ -38,9 +38,17 @@ namespace SimpleMDE
         /// </summary>
         private void open()
         {
-            var result = openFileDialog.ShowDialog();
-            String path = openFileDialog.FileName;
-            Rich_TextBox.LoadFile(path, RichTextBoxStreamType.PlainText);
+
+            if(openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                var filepath = openFileDialog.FileName;
+                var FileStream = openFileDialog.OpenFile();
+                using (StreamReader reader = new StreamReader(FileStream))
+                {
+                    string fileContent = reader.ReadToEnd();
+                    Rich_TextBox.Text = fileContent;
+                }
+            }
         }
 
         /// <summary>
