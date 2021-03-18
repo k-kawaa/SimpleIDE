@@ -62,6 +62,7 @@ namespace SimpleMDE
             this.バージョン情報AToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Rich_TextBox = new System.Windows.Forms.RichTextBox();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -127,6 +128,7 @@ namespace SimpleMDE
             this.上書き保存SToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.上書き保存SToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.上書き保存SToolStripMenuItem.Text = "上書き保存(&S)";
+            this.上書き保存SToolStripMenuItem.Click += new System.EventHandler(this.上書き保存SToolStripMenuItem_Click);
             // 
             // 名前を付けて保存AToolStripMenuItem
             // 
@@ -313,6 +315,7 @@ namespace SimpleMDE
             this.Rich_TextBox.Size = new System.Drawing.Size(775, 410);
             this.Rich_TextBox.TabIndex = 1;
             this.Rich_TextBox.Text = "";
+            this.Rich_TextBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.Link_Clicked);
             // 
             // openFileDialog
             // 
@@ -370,6 +373,7 @@ namespace SimpleMDE
         private System.Windows.Forms.ToolStripMenuItem バージョン情報AToolStripMenuItem;
         public System.Windows.Forms.RichTextBox Rich_TextBox;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
     }
 }
 

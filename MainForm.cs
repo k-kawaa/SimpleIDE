@@ -12,9 +12,12 @@ namespace SimpleMDE
 {
     public partial class MainForm : Form
     {
+        private String path;
+
         public MainForm()
         {
             InitializeComponent();
+            this.path = null;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -33,6 +36,23 @@ namespace SimpleMDE
             Form.Show();
         }
 
+        private void 開くOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            open();
+        }
+
+        private void 上書き保存SToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFile();
+        }
+
+        private void Link_Clicked(object sender, System.Windows.Forms.LinkClickedEventArgs e)
+        {
+            String link = e.LinkText;
+            WebForm Form = new WebForm(link);
+            Form.Show();
+        }
+
         /// <summary>
         /// ファイルを開きます。
         /// </summary>
@@ -48,6 +68,7 @@ namespace SimpleMDE
                     Rich_TextBox.Text = fileContent;
                 }
                 this.Text = "SimpleIDE" + "   " + filepath;
+                this.path = filepath;
             }
         }
 
@@ -80,9 +101,17 @@ namespace SimpleMDE
             }
         }
 
-        private void 開くOToolStripMenuItem_Click(object sender, EventArgs e)
+        /// <summary>
+        /// ファイルを保存します。
+        /// </summary>
+        public void SaveFile()
         {
-            open();
+            String Filedata = Rich_TextBox.Text;
+            using (StreamWriter writer = new StreamWriter(this.path))
+            {
+                writer.Write(Filedata);
+            }
         }
+
     }
 }
