@@ -22,7 +22,7 @@ namespace SimpleMDE
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            
+            this.path = null;
         }
 
         private void カスタマイズCToolStripMenuItem_Click(object sender, EventArgs e)
@@ -118,11 +118,12 @@ namespace SimpleMDE
         /// </summary>
         public void SaveFile()
         {
-            String Filedata = Rich_TextBox.Text;
-            if (this.path == null)
+            if (this.path == null || Rich_TextBox.Text == null)
             {
-                ///TODO:新規作成処理
+                CreateFile();
+                return;
             }
+            String Filedata = Rich_TextBox.Text;
             using (StreamWriter writer = new StreamWriter(this.path))
             {
                 writer.Write(Filedata);
@@ -136,15 +137,6 @@ namespace SimpleMDE
         /// </summary>
         public void CreateFile()
         {
-            if (Rich_TextBox.Modified == true)
-            {
-                SaveFile();
-                Rich_TextBox.Clear();
-            }
-            else
-            {
-                Rich_TextBox.Clear();
-            }
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 var filepath = saveFileDialog.FileName;
