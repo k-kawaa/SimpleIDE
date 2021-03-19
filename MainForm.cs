@@ -43,7 +43,14 @@ namespace SimpleMDE
 
         private void 上書き保存SToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SaveFile();
+            if(this.path == null)
+            {
+                CreateFile();
+            }
+            else
+            {
+                SaveFile();
+            }
         }
 
         private void Link_Clicked(object sender, System.Windows.Forms.LinkClickedEventArgs e)
@@ -120,6 +127,34 @@ namespace SimpleMDE
             {
                 writer.Write(Filedata);
                 this.Text = "SimpleIDE" + "   " + this.path;
+                Rich_TextBox.Modified = false;
+            }
+        }
+
+        /// <summary>
+        /// ファイルを新規作成します。
+        /// </summary>
+        public void CreateFile()
+        {
+            if (Rich_TextBox.Modified == true)
+            {
+                SaveFile();
+                Rich_TextBox.Clear();
+            }
+            else
+            {
+                Rich_TextBox.Clear();
+            }
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                var filepath = saveFileDialog.FileName;
+                using (FileStream fs = File.Create(filepath))
+                {
+                    byte[] info = new UTF8Encoding(true).GetBytes(Rich_TextBox.Text);
+                    fs.Write(info, 0, info.Length);
+                    this.Text = "SimpleIDE" + "   " + filepath;
+                    this.path = filepath;
+                }
             }
         }
 
