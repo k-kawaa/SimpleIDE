@@ -161,7 +161,7 @@ namespace SimpleMDE
                 "|XHTML(*.xhtml)|*.xhtml";
             if (sfd.ShowDialog() == DialogResult.OK)
             {
-                var filepath = saveFileDialog.FileName;
+                var filepath = sfd.FileName;
                 using (FileStream fs = File.Create(filepath))
                 {
                     byte[] info = new UTF8Encoding(true).GetBytes(Rich_TextBox.Text);
