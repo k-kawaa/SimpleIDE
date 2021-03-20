@@ -158,7 +158,34 @@ namespace SimpleMDE
                 "|haskell(*.hs;*.lhs)|*.hs;*.lhs" +
                 "|Haxe(*.hx)|*.hx" +
                 "|HTML(*.html;*.htm)|*.html;*.htm" +
-                "|XHTML(*.xhtml)|*.xhtml";
+                "|XHTML(*.xhtml)|*.xhtml" +
+                "|Java(*.java)|*.java" +
+                "|JavaScript(*.js)|*.js" +
+                "|jsx(*.jsx)|*.jsx" +
+                "|Lisp(*lisp)|*.lisp" +
+                "|LSL(*.lsl)|*.lsl" +
+                "|Lua(*.lua)|*.lua" +
+                "|MATLAB(*.mat)|*.mat" +
+                "|SQL(*.sql)|*.sql" +
+                "Objective-C(*.m)|*.m" +
+                "OCaml(*.ocml)|*.ocml" +
+                "Pascal(*.pas)|*.pas" +
+                "Perl(*.pl)|*.pl" +
+                "PHP(*.php)|*.php" +
+                "Prolog(*.pro)|*.pro" +
+                "Python(*.py)|*.py" +
+                "R(*.r)|*.r" +
+                "Ruby(*.ruby)|*.rb" +
+                "Rust(*.rs)|*.rs" +
+                "Scala(*.scala)|*.scala" +
+                "Scheme(*.scm)|*.scm" +
+                "ShellScript(*.sh)|*.sh" +
+                "TypeScript(*.ts)|*.ts" +
+                "VBScript(*.vbs)|*.vbs" +
+                "Verilog(*.v)|*.v" +
+                "assembly_x86(*.asm)|*.asm" +
+                "XML(*.xml)|*.xml" +
+                "XQuery(*.xquery)|*.xquery";
             if (sfd.ShowDialog() == DialogResult.OK)
             {
                 var filepath = sfd.FileName;
