@@ -53,6 +53,11 @@ namespace SimpleMDE
             }
         }
 
+        private void 名前を付けて保存AToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CreateFile();
+        }
+
         private void Link_Clicked(object sender, System.Windows.Forms.LinkClickedEventArgs e)
         {
             String link = e.LinkText;
@@ -201,5 +206,19 @@ namespace SimpleMDE
             }
         }
 
+        private void 新規作成NToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(Rich_TextBox.Modified == true)
+            {
+                SaveFile();
+                Rich_TextBox.Clear();
+                this.path = null;
+                this.Text = "SimpleIDE";
+            }
+            else
+            {
+                Rich_TextBox.Clear();
+            }
+        }
     }
 }

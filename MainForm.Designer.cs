@@ -104,6 +104,7 @@ namespace SimpleMDE
             this.新規作成NToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.新規作成NToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.新規作成NToolStripMenuItem.Text = "新規作成(&N)";
+            this.新規作成NToolStripMenuItem.Click += new System.EventHandler(this.新規作成NToolStripMenuItem_Click);
             // 
             // 開くOToolStripMenuItem
             // 
@@ -135,6 +136,7 @@ namespace SimpleMDE
             this.名前を付けて保存AToolStripMenuItem.Name = "名前を付けて保存AToolStripMenuItem";
             this.名前を付けて保存AToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.名前を付けて保存AToolStripMenuItem.Text = "名前を付けて保存(&A)";
+            this.名前を付けて保存AToolStripMenuItem.Click += new System.EventHandler(this.名前を付けて保存AToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
