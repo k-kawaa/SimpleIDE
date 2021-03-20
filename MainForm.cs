@@ -27,7 +27,7 @@ namespace SimpleMDE
 
         private void カスタマイズCToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            ///TODO:DELETE THIS OPTION.
         }
 
         private void オプションOToolStripMenuItem_Click(object sender, EventArgs e)
@@ -64,6 +64,8 @@ namespace SimpleMDE
         {
             this.Text = "SimpleIDE" + "（未保存）" + this.path;
         }
+
+
 
         /// <summary>
         /// ファイルを開きます。
@@ -137,7 +139,27 @@ namespace SimpleMDE
         /// </summary>
         public void CreateFile()
         {
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "ABP(*.abp)|*.abp" +
+                "|ActionScript(*.as)|*.as" +
+                "|C(*.c)|*.c" +
+                "|C++(*.cpp)|*.cpp" +
+                "|COBOL(*.cobol)|*.cobol" +
+                "|CoffeeScript(*.coffee)|*.coffee" +
+                "|C#(*.cs)|*.cs" +
+                "|CSS(*.css)|*.css" +
+                "|Clojure(*.clj)|*.clj" +
+                "|D(*.d)|*.d" +
+                "|Dart(*.dart)|*.dart" +
+                "|Erlang(*.erl)|*.erl" +
+                "|Forth(*.forth)|*.forth" +
+                "|Go(*.go)|*.go" +
+                "|Groovy(*.grooby)|*.groovy" +
+                "|haskell(*.hs;*.lhs)|*.hs;*.lhs" +
+                "|Haxe(*.hx)|*.hx" +
+                "|HTML(*.html;*.htm)|*.html;*.htm" +
+                "|XHTML(*.xhtml)|*.xhtml";
+            if (sfd.ShowDialog() == DialogResult.OK)
             {
                 var filepath = saveFileDialog.FileName;
                 using (FileStream fs = File.Create(filepath))
