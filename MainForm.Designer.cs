@@ -75,6 +75,7 @@ namespace SimpleMDE
             this.ヘルプHToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
@@ -220,8 +221,9 @@ namespace SimpleMDE
             this.コピーCToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.コピーCToolStripMenuItem.Name = "コピーCToolStripMenuItem";
             this.コピーCToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.コピーCToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.コピーCToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.コピーCToolStripMenuItem.Text = "コピー(&C)";
+            this.コピーCToolStripMenuItem.Click += new System.EventHandler(this.コピーCToolStripMenuItem_Click);
             // 
             // 貼り付けPToolStripMenuItem
             // 

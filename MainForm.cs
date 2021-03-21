@@ -58,6 +58,15 @@ namespace SimpleMDE
             CreateFile();
         }
 
+        private void コピーCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Rich_TextBox.SelectedText == "")
+            {
+                return;
+            }
+            Clipboard.SetText(Rich_TextBox.SelectedText);
+        }
+
         private void Link_Clicked(object sender, System.Windows.Forms.LinkClickedEventArgs e)
         {
             String link = e.LinkText;
@@ -220,5 +229,6 @@ namespace SimpleMDE
                 Rich_TextBox.Clear();
             }
         }
+
     }
 }
