@@ -29,35 +29,29 @@ namespace SimpleMDE
         /// </summary>
         private void InitializeComponent()
         {
-            this.webView1 = new Microsoft.Toolkit.Forms.UI.Controls.WebView();
-            ((System.ComponentModel.ISupportInitialize)(this.webView1)).BeginInit();
+            this.webView = new EO.WebBrowser.WebView();
             this.SuspendLayout();
             // 
-            // webView1
+            // webView
             // 
-            this.webView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webView1.Location = new System.Drawing.Point(0, 0);
-            this.webView1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webView1.Name = "webView1";
-            this.webView1.Size = new System.Drawing.Size(800, 450);
-            this.webView1.TabIndex = 0;
+            this.webView.InputMsgFilter = null;
+            this.webView.ObjectForScripting = null;
+            this.webView.Title = null;
             // 
             // WebForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.webView1);
             this.Name = "WebForm";
             this.Text = "簡易WEBブラウザー";
             this.Load += new System.EventHandler(this.WebForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.webView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Microsoft.Toolkit.Forms.UI.Controls.WebView webView1;
+        private EO.WebBrowser.WebView webView;
     }
 }

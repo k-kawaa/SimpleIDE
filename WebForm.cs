@@ -17,7 +17,7 @@ namespace SimpleMDE
         {
             InitializeComponent();
             this.link = link;
-            webView1.Source = new Uri(link);
+            webView.Url = link;
         }
 
         private void WebForm_Load(object sender, EventArgs e)

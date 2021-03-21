@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "5/CgY6tG/V1hqnDiIrsRrWgFoCzDfsNYiCiNwBLIzWfo4H8oThLsca294/EkSslp9kuQhHxZPg4GlsXqkhcwQg==",
+  "success": true,
+  "projectFilePath": "D:\\C#\\SimpleMDE\\SimpleIDE.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kawas\\.nuget\\packages\\eo.webbrowser\\21.0.62\\eo.webbrowser.21.0.62.nupkg.sha512",
+    "C:\\Users\\kawas\\.nuget\\packages\\microsoft.windows.sdk.contracts\\10.0.18362.2005\\microsoft.windows.sdk.contracts.10.0.18362.2005.nupkg.sha512",
+    "C:\\Users\\kawas\\.nuget\\packages\\system.runtime.windowsruntime\\4.6.0\\system.runtime.windowsruntime.4.6.0.nupkg.sha512",
+    "C:\\Users\\kawas\\.nuget\\packages\\system.runtime.windowsruntime.ui.xaml\\4.6.0\\system.runtime.windowsruntime.ui.xaml.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

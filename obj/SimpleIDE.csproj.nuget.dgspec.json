@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\C#\\SimpleMDE\\SimpleIDE.csproj": {}
+  },
+  "projects": {
+    "D:\\C#\\SimpleMDE\\SimpleIDE.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C#\\SimpleMDE\\SimpleIDE.csproj",
+        "projectName": "SimpleIDE",
+        "projectPath": "D:\\C#\\SimpleMDE\\SimpleIDE.csproj",
+        "packagesPath": "C:\\Users\\kawas\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\SimpleMDE\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\kawas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "EO.WebBrowser": {
+              "target": "Package",
+              "version": "[21.0.62, )"
+            },
+            "Microsoft.Windows.SDK.Contracts": {
+              "target": "Package",
+              "version": "[10.0.18362.2005, )"
+            }
+          },
+          "imports": [
+            "uap10.0.18362"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

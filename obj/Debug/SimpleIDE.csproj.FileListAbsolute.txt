@@ -11,6 +11,6 @@ D:\C#\SimpleMDE\obj\Debug\SimpleMDE.exe
 D:\C#\SimpleMDE\obj\Debug\SimpleMDE.pdb
 D:\C#\SimpleMDE\obj\Debug\SimpleMDE.WebForm.resources
 D:\C#\SimpleMDE\obj\Debug\SimpleIDE.csproj.CopyComplete
-D:\C#\SimpleMDE\bin\Debug\Microsoft.Toolkit.Forms.UI.Controls.WebView.dll
-D:\C#\SimpleMDE\bin\Debug\Microsoft.Toolkit.Forms.UI.Controls.WebView.pdb
-D:\C#\SimpleMDE\bin\Debug\Microsoft.Toolkit.Forms.UI.Controls.WebView.xml
+D:\C#\SimpleMDE\bin\Debug\EO.Base.dll
+D:\C#\SimpleMDE\bin\Debug\EO.WebBrowser.dll
+D:\C#\SimpleMDE\bin\Debug\EO.WebEngine.dll
