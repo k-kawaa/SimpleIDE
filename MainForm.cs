@@ -23,6 +23,7 @@ namespace SimpleMDE
         private void MainForm_Load(object sender, EventArgs e)
         {
             this.path = null;
+            
         }
 
         private void カスタマイズCToolStripMenuItem_Click(object sender, EventArgs e)
